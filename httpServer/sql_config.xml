@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sqlmap>
+    <sql id="user.insert">
+        INSERT INTO users (username, password, email, create_time) 
+        VALUES ('%s', '%s', '%s', NOW())
+    </sql>
+    
+    <sql id="user.select">
+        SELECT * FROM users
+    </sql>
+    
+    <!-- 可以添加更多SQL语句 -->
+</sqlmap> 
